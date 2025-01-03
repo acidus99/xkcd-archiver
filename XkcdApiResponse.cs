@@ -16,6 +16,8 @@ public class XkcdApiResponse
     [JsonPropertyName("img")]
     public string ImageUrl { get; init; }
 
+    //use safe title to avoid HTML like in comic #472 
+    [JsonPropertyName("safe_title")]
     public string Title { get; init; }
 
     public string Month { get; init; }
